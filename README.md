@@ -8,6 +8,11 @@ The project uses [`poetry`](https://python-poetry.org/) for dependency managemen
 
 The code uses [`python-dotenv`](https://pypi.org/project/python-dotenv/) to load an `.env` file (not provided) from the same directory to set the `OPENAI_API_KEY` value environment variable. If this library is not available within Udacity's workspace, the client's `api_key` parameter will have to be set manually.
 
+### Models
+
+We've used [OpenAI](https://openai.com/)'s `gpt-4-turbo` for the real estate listings generation (through [LangChain](https://www.langchain.com/) abstractions) and [OpenAI](https://openai.com/)'s `dall-e-2` to
+generate image based on the descriptions and some minor prompt engineering to steer the output towards realistic looking pictures.
+
 ### Contents
 
 | File/Folder | Description |

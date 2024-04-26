@@ -8,11 +8,13 @@ from io import BytesIO
 from lancedb.pydantic import LanceModel, Vector
 from PIL import Image
 
+
 class RealEstateListingLanceRecord(LanceModel):
     neighborhood: str
     price: int
     bedrooms: int
     bathrooms: int | float
+    has_solar_panels: bool
     description: str
     neighborhood_description: str
     image_bytes: bytes

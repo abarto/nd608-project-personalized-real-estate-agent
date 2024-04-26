@@ -15,8 +15,13 @@ The code uses [`python-dotenv`](https://pypi.org/project/python-dotenv/) to load
 | [`Udacity-Project-Environment`](Udacity-Project-Environment) | The empty project environment provided by Udacity. |
 | [`Generate-Real-Estate-Listings.ipynb`](Generate-Real-Estate-Listings.ipynb) | Jupyter Notebook where we generate the synthetic real estate listings as well as setting up the [LanceDb](https://lancedb.com/) vector database with the listings' embeddings. |
 | [`Generate-Real-Estate-Listings.html`](Generate-Real-Estate-Listings.html) | Static HTML version of [`Generate-Real-Estate-Listings.ipynb`](Generate-Real-Estate-Listings.ipynb). |
+| [`Demo-HomeMatch.ipynb`](Demo-HomeMatch.ipynb) | Jupyter Notebook where we set-up the environment and invoke the *HomeMatch* [Gradio](https://www.gradio.app/) app |
+| [`Demo-HomeMatch.html`](Demo-HomeMatch.html) | Static HTML version of [`Demo-HomeMatch.ipynb`](Demo-HomeMatch.ipynb)|
+| [`app.py`](app.py) | Python module with the *HomeMatch* [Gradio](https://www.gradio.app/) app code. |
+| [`db.py`](db.py) | Python module with code related to database functions. |
 | [`models.py`](models.py) | Python module with models shared between [`Generate-Real-Estate-Listings.ipynb`](Generate-Real-Estate-Listings.ipynb) and the `app.py` module. |
 | [`data`](data) | Folder containing the [LanceDb](https://lancedb.com/) data files as well as `pickle` files used as intermediate storage during the real estate listings generation. |
+| [`images`](images) | Folder containing screenshots of the running *HomeMatch* app. |
 | [`pyproject.toml`](pyproject.toml) | [`poetry`](https://python-poetry.org/) project specification. |
 | [`poetry.lock`](poetry.lock) | [`poetry`](https://python-poetry.org/) dependency locks. |
 
@@ -58,3 +63,15 @@ The app takes a textual description of the user's needs, and generates embedding
 It then takes the listing description and passes it to a [OpenAI](https://openai.com/)'s completion model prompted to recreate the description using a more enticing and colorful language while trying to draw attention to features that match the user supplied needs.
 
 The output of the model, as well as the stored image is then shown to the user.
+
+You can run the app opening [`Demo-HomeMatch.ipynb`](Demo-HomeMatch.ipynb) with Jupyter, or from the console with: 
+
+```
+python -m app
+```
+
+### Screenshots
+
+![First Screenshot](/images/Screenshot_1.png)
+![Second Screenshot](/images/Screenshot_2.png)
+![Third Screenshot](/images/Screenshot_3.png)

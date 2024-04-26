@@ -8,11 +8,6 @@ The project uses [`poetry`](https://python-poetry.org/) for dependency managemen
 
 The code uses [`python-dotenv`](https://pypi.org/project/python-dotenv/) to load an `.env` file (not provided) from the same directory to set the `OPENAI_API_KEY` value environment variable. If this library is not available within Udacity's workspace, the client's `api_key` parameter will have to be set manually.
 
-### Models
-
-We've used [OpenAI](https://openai.com/)'s `gpt-4-turbo` for the real estate listings generation (through [LangChain](https://www.langchain.com/) abstractions) and [OpenAI](https://openai.com/)'s `dall-e-2` to
-generate image based on the descriptions and some minor prompt engineering to steer the output towards realistic looking pictures.
-
 ### Contents
 
 | File/Folder | Description |
@@ -24,3 +19,42 @@ generate image based on the descriptions and some minor prompt engineering to st
 | [`data`](data) | Folder containing the [LanceDb](https://lancedb.com/) data files as well as `pickle` files used as intermediate storage during the real estate listings generation. |
 | [`pyproject.toml`](pyproject.toml) | [`poetry`](https://python-poetry.org/) project specification. |
 | [`poetry.lock`](poetry.lock) | [`poetry`](https://python-poetry.org/) dependency locks. |
+
+### Real Estate Listings Generation
+
+We've used [OpenAI](https://openai.com/)'s `gpt-4-turbo` (through [LangChain](https://www.langchain.com/) abstractions) to generate [Pydantic](https://docs.pydantic.dev/latest/) objects with specific features of the properties (number of rooms, number of bathrooms, etc.) as well as a textual description. We've specifically asked the model to generate matter-of-fact text so we can spruce it app when presenting the listing through the *HomeMatch* app.
+
+We then took those descriptions and fed them to [OpenAI](https://openai.com/)'s `dall-e-2` to
+generate realistic images of the listings.
+
+We then paired the text and the image to generate [CLIP](https://huggingface.co/docs/transformers/model_doc/clip) embeddings which we stored on a [LanceDB](https://lancedb.com/) table with this schema:
+
+```python
+class RealEstateListingLanceRecord(LanceModel):
+    neighborhood: str
+    price: int
+    bedrooms: int
+    bathrooms: int | float
+    description: str
+    neighborhood_description: str
+    image_bytes: bytes
+    vector: Vector(768)
+
+    @property
+    def image_as_pil(self):
+        return Image.open(BytesIO(self.image_bytes))
+```
+
+This table is going to be used to perform semantic searches on the *HomeMatch* app.
+
+Please check the [`Generate-Real-Estate-Listings.ipynb`](Generate-Real-Estate-Listings.ipynb) Jupyter Notebook for specific details about the implementation.
+
+### The *HomeMatch* app
+
+We've used [Gradio](https://www.gradio.app/) to build the *HomeMatch* app, to make the project consistent to other offerings presented during the lessons.
+
+The app takes a textual description of the user's needs, and generates embeddings out of them to perform a semantic search on listings vector database. It then applies additional filters based on the user's specific inputs to get to the final recommendation.
+
+It then takes the listing description and passes it to a [OpenAI](https://openai.com/)'s completion model prompted to recreate the description using a more enticing and colorful language while trying to draw attention to features that match the user supplied needs.
+
+The output of the model, as well as the stored image is then shown to the user.

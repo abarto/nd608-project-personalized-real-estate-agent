@@ -1,0 +1,160 @@
+{
+  "neighborhood": "Maplewood Heights",
+  "price": 450000,
+  "bedrooms": 4,
+  "bathrooms": 3.0,
+  "has_solar_panels": true,
+  "description": "Charming 4-bedroom, 3-bathroom home in the serene Maplewood Heights, featuring a modern kitchen and a spacious living room with a fireplace. The exterior boasts a beautifully landscaped garden and a private backyard with a patio area perfect for entertaining. This eco-friendly home comes equipped with solar panels, reducing utility costs significantly.",
+  "neighborhood_description": "Maplewood Heights is a family-friendly neighborhood known for its excellent schools, community parks, and active neighborhood association."
+}
+
+{
+  "neighborhood": "Old Town East",
+  "price": 120000,
+  "bedrooms": 2,
+  "bathrooms": 1.0,
+  "has_solar_panels": false,
+  "description": "Cozy 2-bedroom, 1-bathroom starter home in Old Town East, ideal for first-time buyers or investors. Needs some TLC but has great potential with hardwood floors and a compact, functional layout. The property includes a small front yard and a detached garage.",
+  "neighborhood_description": "Old Town East is a lower-income area with a vibrant community spirit and easy access to public transportation."
+}
+
+{
+  "neighborhood": "Cedar Grove",
+  "price": 750000,
+  "bedrooms": 5,
+  "bathrooms": 4.0,
+  "has_solar_panels": false,
+  "description": "Luxurious 5-bedroom, 4-bathroom residence in prestigious Cedar Grove, featuring a gourmet kitchen with high-end appliances and a grand master suite with a spa-like bathroom. The meticulously maintained grounds include a pool, outdoor kitchen, and a three-car garage. Perfect for those who appreciate finer living and entertaining.",
+  "neighborhood_description": "Cedar Grove is an affluent neighborhood known for its large, elegant homes and well-kept streets."
+}
+
+{
+  "neighborhood": "Pine Trail",
+  "price": 300000,
+  "bedrooms": 3,
+  "bathrooms": 2.5,
+  "has_solar_panels": true,
+  "description": "Modern 3-bedroom, 2.5-bathroom home in Pine Trail with eco-friendly features including solar panels and energy-efficient appliances. The open floor plan includes a large living area and a kitchen with a center island. Outdoors, there's a deck and a manageable yard, perfect for weekend relaxation.",
+  "neighborhood_description": "Pine Trail is a growing community popular among young professionals and families, known for its sustainability initiatives and modern amenities."
+}
+
+{
+  "neighborhood": "Riverbend",
+  "price": 200000,
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "has_solar_panels": false,
+  "description": "Affordable 3-bedroom, 2-bathroom home in the peaceful Riverbend neighborhood, featuring a spacious living room and a kitchen with ample storage. The property includes a large backyard with a shed and a covered porch. Ideal for families looking for a quiet, suburban lifestyle.",
+  "neighborhood_description": "Riverbend is known for its safe streets and close-knit community, with several parks and a local elementary school."
+}
+
+{
+  "neighborhood": "Sunnyvale",
+  "price": 980000,
+  "bedrooms": 4,
+  "bathrooms": 3.5,
+  "has_solar_panels": true,
+  "description": "Stunning 4-bedroom, 3.5-bathroom home in Sunnyvale with luxurious finishes, a state-of-the-art kitchen, and a large home office. The property features a beautifully landscaped garden and a rooftop deck with solar panels. An ideal choice for those who value sustainability and upscale living.",
+  "neighborhood_description": "Sunnyvale is an upscale neighborhood with a reputation for high-quality living, excellent schools, and a variety of recreational facilities."
+}
+
+{
+  "neighborhood": "Elmwood District",
+  "price": 65000,
+  "bedrooms": 1,
+  "bathrooms": 1.0,
+  "has_solar_panels": false,
+  "description": "Compact 1-bedroom, 1-bathroom fixer-upper in the Elmwood District, offering a unique opportunity for renovation and customization. The property includes a small yard and is located close to local amenities. Ideal for a DIY enthusiast or investor looking for a project.",
+  "neighborhood_description": "The Elmwood District is a lower-income neighborhood undergoing revitalization, with potential for growth and increasing property values."
+}
+
+{
+  "neighborhood": "Brookside",
+  "price": 550000,
+  "bedrooms": 4,
+  "bathrooms": 2.5,
+  "has_solar_panels": false,
+  "description": "Beautifully maintained 4-bedroom, 2.5-bathroom family home in Brookside, featuring a formal dining room, a cozy fireplace, and a large kitchen with breakfast nook. The property boasts a spacious backyard with a play area and mature trees. A wonderful environment for family life and outdoor activities.",
+  "neighborhood_description": "Brookside is a well-established, family-oriented neighborhood known for its tree-lined streets and friendly community atmosphere."
+}
+
+{
+  "neighborhood": "Highland Park",
+  "price": 220000,
+  "bedrooms": 3,
+  "bathrooms": 1.5,
+  "has_solar_panels": false,
+  "description": "Charming 3-bedroom, 1.5-bathroom home in Highland Park, perfect for those looking to put their personal touch on a property. The home features original woodwork and a large front porch. A great option for a handy homeowner or an investor.",
+  "neighborhood_description": "Highland Park is a diverse, up-and-coming neighborhood appreciated for its historic homes and active community life."
+}
+
+{
+  "neighborhood": "Lakeside",
+  "price": 850000,
+  "bedrooms": 5,
+  "bathrooms": 4.0,
+  "has_solar_panels": false,
+  "description": "Expansive 5-bedroom, 4-bathroom lakefront property in Lakeside, offering breathtaking views and a private dock. The home includes multiple living spaces and a large deck for entertaining. Ideal for those seeking a tranquil retreat with ample space for guests.",
+  "neighborhood_description": "Lakeside is a prestigious neighborhood known for its stunning waterfront homes and peaceful surroundings."
+}
+
+{
+  "neighborhood": "Greenfield",
+  "price": 180000,
+  "bedrooms": 2,
+  "bathrooms": 1.0,
+  "has_solar_panels": false,
+  "description": "Cozy 2-bedroom, 1-bathroom bungalow in Greenfield, featuring a welcoming front porch and a functional layout. The home is in need of some updates, making it a perfect project for those looking to add value. The large backyard offers plenty of space for expansion or gardening.",
+  "neighborhood_description": "Greenfield is a budget-friendly neighborhood with a strong sense of community and easy access to local shops and parks."
+}
+
+{
+  "neighborhood": "Silver Lake",
+  "price": 990000,
+  "bedrooms": 4,
+  "bathrooms": 3.5,
+  "has_solar_panels": true,
+  "description": "Contemporary 4-bedroom, 3.5-bathroom home in Silver Lake, designed with sustainability in mind, featuring solar panels and modern architecture. The interior includes high ceilings, large windows, and a chef’s kitchen. Outside, the landscaped garden and patio area provide a perfect setting for relaxation and entertainment.",
+  "neighborhood_description": "Silver Lake is a trendy neighborhood popular with artists and professionals, known for its eclectic shops, vibrant nightlife, and community events."
+}
+
+{
+  "neighborhood": "Willow Creek",
+  "price": 230000,
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "has_solar_panels": false,
+  "description": "Affordable 3-bedroom, 2-bathroom home in Willow Creek, ideal for families or first-time home buyers. The home features a spacious living room and a large backyard with a deck. Located in a friendly community with good schools and parks nearby.",
+  "neighborhood_description": "Willow Creek is a family-friendly neighborhood known for its affordable housing and active community life."
+}
+
+{
+  "neighborhood": "Meadowlands",
+  "price": 320000,
+  "bedrooms": 3,
+  "bathrooms": 2.5,
+  "has_solar_panels": false,
+  "description": "Well-appointed 3-bedroom, 2.5-bathroom home in Meadowlands, featuring a modern kitchen with stainless steel appliances and a master suite with a walk-in closet. The property includes a two-car garage and a fenced backyard. A great choice for those seeking a comfortable and convenient lifestyle.",
+  "neighborhood_description": "Meadowlands is a quiet, suburban neighborhood with easy access to shopping centers and major highways."
+}
+
+{
+  "neighborhood": "Garden District",
+  "price": 290000,
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "has_solar_panels": false,
+  "description": "Charming 3-bedroom, 2-bathroom cottage in the historic Garden District, featuring original hardwood floors and a cozy fireplace. The home includes a lovely front garden and a private backyard. Perfect for those who appreciate vintage charm and a central location.",
+  "neighborhood_description": "The Garden District is renowned for its well-preserved historic homes and lush, mature gardens."
+}
+
+{
+  "neighborhood": "Vista Ridge",
+  "price": 210000,
+  "bedrooms": 2,
+  "bathrooms": 1.0,
+  "has_solar_panels": false,
+  "description": "Quaint 2-bedroom, 1-bathroom fixer-upper in Vista Ridge, offering a great opportunity for customization and improvement. The home sits on a large lot with potential for expansion or landscaping projects. An excellent investment for a visionary buyer.",
+  "neighborhood_description": "Vista Ridge is a developing neighborhood with a mix of older homes and new constructions, appealing to both families and investors."
+}
+
